@@ -159,7 +159,7 @@ if tickets_restants > 0:
                             save_data(database)
                             email_sent = send_email(email, unique_id)
                             if email_sent:
-                                st.success(f"Inscription réussie ! Votre identifiant unique est : {unique_id}. Un email a été envoyé à {email}.")
+                                st.success(f"Inscription réussie ! Votre identifiant d'inscription unique a été envoyé à votre adresse mail {email}.")
                             else:
                                 st.error("L'inscription a réussi, mais l'envoi de l'email a échoué.")
                         else:
