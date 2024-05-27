@@ -112,27 +112,6 @@ admin_accounts = {
     "Kientega": "abdoumpse",
     "ephraim": "ephralpas1"
 }
-import os
-"""
-# Afficher le répertoire courant
-current_directory = os.getcwd()
-st.write(f"Répertoire courant : {current_directory}")
-
-# Afficher le contenu du répertoire courant
-st.write(f"Contenu du répertoire : {os.listdir(current_directory)}")
-
-# Chemin relatif vers le fichier Word
-document_path = "reglement_interieur.docx"
-
-# Vérifiez si le fichier existe
-if os.path.exists(document_path):
-    # Charger le fichier si trouvé
-    document_content = open(document_path, "rb").read()
-    st.write("Fichier chargé avec succès.")
-else:
-    st.write("Fichier non trouvé.")
-    """
-
 database = st.session_state.database
 
 # Formulaire de connexion administrateur
