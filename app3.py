@@ -26,8 +26,8 @@ def is_valid_email(email):
 
 # Fonction pour envoyer un email avec PDF en pièce jointe
 def send_email(recipient_email, subject, body, pdf_content):
-    sender_email = "bebouyo@gmail.com"
-    sender_password =  "noij iynb osmy bzml"
+    sender_email = "Aesissp@gmail.com"
+    sender_password =  "ruoq dpla fuxx zzxp"
     msg = MIMEMultipart()
     msg["From"] = sender_email
     msg["To"] = recipient_email
