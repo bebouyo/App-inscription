@@ -44,8 +44,8 @@ def save_data(database):
 
 # Fonction pour envoyer un email
 def send_email(to_email, unique_id):
-    from_email = "bebouyo@gmail.com"
-    from_password = "noij iynb osmy bzml"
+    from_email = "Aesissp@gmail.com"
+    from_password = "ruoq dpla fuxx zzxp"
     
     # Configuration du message
     msg = MIMEMultipart()
