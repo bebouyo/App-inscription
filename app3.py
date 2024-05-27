@@ -220,7 +220,7 @@ if st.session_state.get("logged_in"):
     st.sidebar.markdown("<h3 style='color:blue;'>Aperçu des clients inscrits</h3>", unsafe_allow_html=True)
     if len(database) > 0:
         df = pd.DataFrame(database)
-        st.sidebar.dataframe(df[['Nom et prénom', 'Email', 'Statut de paiement','Identifiant unique'])
+        st.sidebar.dataframe(df[['Nom et prénom', 'Email', 'Statut de paiement','Identifiant unique']])
     else:
         st.sidebar.write("<p style='color:blue;'>Aucun client inscrit pour le moment.</p>", unsafe_allow_html=True)
 
