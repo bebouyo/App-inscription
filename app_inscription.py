@@ -69,15 +69,20 @@ def send_email(to_email, unique_id):
         st.error(f"Erreur lors de l'envoi de l'email : {e}")
         return False
 
-# Initialisation de la base de données (chargée depuis le fichier CSV)
-if "database" not in st.session_state:
-    st.session_state.database = load_data()
-    st.session_state.max_tickets = 50
+# Chemin du fichier CSV
+database_path = os.path.join(os.path.dirname(__file__), "database.csv")
 
-database = st.session_state.database
-max_tickets = st.session_state.max_tickets
+# Charger les données à partir du fichier CSV
+try:
+    database = pd.read_csv(database_path)
+except Exception as e:
+    print(f"Erreur de chargement des données: {e}")
+    database = pd.DataFrame()  # Créer un DataFrame vide en cas d'erreur
 
-# Mise à jour du nombre de tickets disponibles
+# Nombre maximum de billets
+max_tickets = 50
+
+# Nombre de billets restants
 tickets_restants = max_tickets - len(database)
 
 # CSS personnalisé
